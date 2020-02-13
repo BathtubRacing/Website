@@ -81,8 +81,8 @@ table {
 body {
 	font-family: 'Open Sans', sans-serif;
 	padding-top: 100px;
-	background: #000;
-  color: #fff;
+	background: #fff;
+  color: #000;
 }
 
 footer{
@@ -134,8 +134,9 @@ img{
 
 #masthead{
 	position: fixed;
-	top: 0;
-	left: 0;
+  text-align: center;
+  left: 0;
+  top: 0;
 	z-index: 999;
 	width: 100%;
 	background: #fff;
@@ -144,8 +145,8 @@ img{
 }
 
 #site-title{
-	float:left;
-	display: block;
+	display: inline-block;
+  width: 150px;
 	position: relative;
 	padding: 0px 12px 15px 15px;
   color: #000;
@@ -192,12 +193,12 @@ img{
 }
 
 .primary-menu{
-	float: right;
+	display: inline-block;
 	padding-top: 36px;
 }
 
 .primary-menu > li{
-	float: left;
+	display: inline-block;
 }
 
 .primary-menu a{
