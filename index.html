@@ -1,74 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<!-- Meta data -->
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="author" content="ERRA">
-		<meta name="description" content="ERRA Home">
-		<meta name="keywords" content="Electric, Road Racing, Association, Motorbike, Motorcycle">
-		<!-- Title -->
-		<title>ERRA</title>
-		<!-- Style sheets -->
-		<link rel="stylesheet" href="css/style.css" type="text/css">
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700,300,600,400' rel='stylesheet' type='text/css'>
-			<!-- Font Collection: http://www.google.com/fonts#UsePlace:use/Collection:Open+Sans:300italic,400italic,300,600,400 -->
-			<!-- TODO: We can remove unused fonts near end of project to speed up load times-->
-		<!-- Scripts -->
-	</head>
-	<body class="page-about">
-		<div id="container" class="site">
-			<header id="masthead" class="site-header" role="banner">
-				<!-- Site Title and Tag-line -->
-				<div id="site-title">
-					<div id="logo">
-						ERRA
-					</div>
-					<div id="tagline">
-						Electric Road Racing Association
-					</div>
-				</div>
-				<!-- Header Navigation -->
-				<nav role="navigation">
-					<ul class="primary-menu">
-						<li class="current-menu-item"><a href="">Home</a></li>
-						<li><a href="./About/">About</a></li>
-            <li><a href="./Calendar/">Calendar</a></li>
-            <li><a href="./Members/">Members</a></li>
-            <li><a href="./Rules/">Rules</a></li>
-            <li><a href="./Contact/">Contact</a></li>
-					</ul>
-				</nav>
-			</header>
-			<div id="content">
-				<div id="primary" role="main">
-					<header class="page-header">
-						<h1 class="page-title">Home</h1>
-					</header>
-					<img src="img/bike.jpg" alt="Photo of electric bikes" class="float-left" width="40%">
-					<p>
-						ERRA is an electric motorcycle racing association formed by a number of University and privateer teams to take electric motorycle racing to the next level.
+<head>
+	<!-- Meta data -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="ERRA">
+	<meta name="description" content="ERRA Home">
+	<meta name="keywords" content="Electric, Road Racing, Association, Motorbike, Motorcycle">
+	<!-- Title -->
+	<title>ERRA</title>
+	<!-- Style sheets -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> <!-- Bootstrap -->
+	<link rel="stylesheet" href="css/style.css" type="text/css"> <!-- Homepage CSS -->
+	<link href='http://fonts.googleapis.com/css?family=Metrophobic|Roboto:400italic,700,400,600' rel='stylesheet' type='text/css'> <!-- Google Fonts -->
+	<!-- Scripts -->
+	<script src="https://kit.fontawesome.com/2e9f86df2c.js" crossorigin="anonymous"></script> <!-- FontAwesome for social media icons -->
+</head>
+<body>
+	<header>
+		<!--Navbar-->
+		<nav class="navbar fixed-top topnav">
+			<ul>
+				<li><a class="active" href="#home">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#members">Members</a></li>
+				<li><a href="#calendar">Calendar</a></li>
+				<li><a href="#rules">Rules</a></li>
+				<li><a href="#contact">Contact us</a></li>
+			</ul>
+			</nav>
+		</header>
 
-					</p>
-					<h2>Find us on Social Media</h2>
-					<p><a href="https://www.facebook.com/Electric-Road-Racing-Association-100373328222333/">Facebook</a></p>
-          <p><a href="https://twitter.com/ERRAssociation">Twitter</a></p>
-          <p><a href="https://www.instagram.com/errassociation/">Instagram</a></p>
-          <p><a href="https://www.linkedin.com/company/errassocation">LinkedIn</a></p>
+		<!-- Site Title and Tag-line -->
+		<div class="jumbotron jumbotron-fluid headerbg" id="home">
+			<div class="container page-section sitemaininfo">
+				<img src="img/erra.png" />
+				<h1 class="sitetitle">Electric Road Racing Association</h2>
+				<p>
+					ERRA is an electric motorcycle racing association formed by a number of University and privateer teams to take electric motorycle racing to the next level.
+				</p>
+				<a href="#rules"><button class="header-button" style="margin-right: 50px;"> Rules </button></a> <a href="#contact"><button class="header-button"> Contact Us </button></a>
+			</div>
+		</div>
+
+		<div class="jumbotron jumbotron-fluid" id="about">
+			<div class="container page-section about-desc">
+				<h1 class="h1gen">About</h1>
+				<p>
+					Spicy jalapeno bacon ipsum dolor amet meatball jerky andouille tongue leberkas chicken pork loin, pork bresaola. Tri-tip alcatra landjaeger capicola ground round burgdoggen flank jowl porchetta corned beef pig short ribs meatloaf. Cow sirloin pork belly shankle. Frankfurter boudin landjaeger burgdoggen tri-tip ham hock porchetta shank, doner ball tip. Bresaola ground round jerky pastrami, tenderloin pancetta kevin filet mignon.
+				</p>
+				<p>
+					Tail salami beef ribs kielbasa, ground round shankle leberkas chuck sausage turducken tenderloin rump. Short ribs t-bone shankle pastrami, hamburger shoulder pork beef ribs leberkas sausage kielbasa. Leberkas prosciutto kielbasa jerky spare ribs burgdoggen. Picanha frankfurter doner, ball tip landjaeger kevin corned beef alcatra swine capicola filet mignon pork belly beef cow. Fatback pastrami tongue porchetta capicola pork.
+				</p>
+				Corned beef brisket turkey, biltong chuck pancetta shankle. Pork spare ribs filet mignon shank beef ribs strip steak. Buffalo leberkas rump jowl. Prosciutto kevin short loin beef kielbasa fatback, ground round jerky chislic strip steak tail. Chicken shankle burgdoggen tongue picanha bacon venison.
+				<p>
+					Shank venison capicola ribeye short ribs leberkas meatloaf rump filet mignon chuck. Buffalo leberkas cupim hamburger jowl andouille kielbasa beef jerky corned beef meatball pastrami brisket. Chuck ribeye swine rump kielbasa short loin strip steak biltong alcatra. Porchetta boudin picanha prosciutto, shankle turkey hamburger. Rump filet mignon jowl strip steak chuck venison sirloin tenderloin porchetta buffalo doner kielbasa. Hamburger doner buffalo short ribs beef.
+				</p>
+				<p>
+					Kielbasa venison shankle sirloin boudin. Bresaola sirloin jowl biltong chislic, pork belly ball tip. Fatback pork loin prosciutto rump ribeye spare ribs alcatra bresaola beef ribs. Tongue cupim brisket, meatloaf chislic chuck beef ribs t-bone. Pork beef salami kielbasa andouille beef ribs chuck shankle leberkas chislic bresaola meatloaf. Short ribs t-bone alcatra tongue tri-tip short loin.
+				</p>
+			</div>
+		</div>
+
+		<div class="jumbotron jumbotron-fluid" id="calendar">
+			<div class="container page-section">
+				<h1 class="h1gen">Calendar</h1>
+				<div style="width:100%; min-height:500px; border: 1px solid rgb(0,0,0); padding: 20px;">
+					Google / Outlook Calendar Placeholder
 				</div>
 			</div>
-			<footer class="site-footer" role="contentInfo">
-				<span class="float-left">
-					<p class="copyright">
-						&copy MMXX - ERRA
-					</p>
-				</span>
-				<span class="float-right">
-					<p>
-						Last Updated 13/02/2020
-					</p>
-				</span>
-			</footer>
 		</div>
-	</body>
-</html>
+
+		<div class="jumbotron jumbotron-fluid" id="members">
+			<div class="container page-section">
+				<h1 class="h1gen">Members</h1>
+				<div id="carouselExampleControls" class="carousel slide member-carousel" data-ride="carousel">
+					<div class="carousel-inner teams">
+						<div class="carousel-item active">
+							<div class="row">
+								<div class="col-sm"><img src="./img/LOGO_SQUARE_LIGHT_BACKGROUND.png" class="col-sm" style="margin-bottom:0px;" align="center"/>
+									<p class="membertext">Founded in 2015, Bath Zero is known for finishing second in the IOM TT in 2019.</p>
+									<button class="header-button" href="https://www.bathzero.com/">Website</button></div>
+									<div class="col-sm"><img src="./img/LOGO_SQUARE_LIGHT_BACKGROUND.png" class="col-sm" style="margin-bottom:0px;" align="center"/>Warwick Moto</div>
+									<div class="col-sm"><img src="./img/LOGO_SQUARE_LIGHT_BACKGROUND.png" class="col-sm" style="margin-bottom:0px;" align="center"/>Brunel Racing</div>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="row">
+									<div class="col-sm"><img src="./img/LOGO_SQUARE_LIGHT_BACKGROUND.png" class="col-sm" style="margin-bottom:0px;" align="center"/>Nova Electric Racing</div>
+									<div class="col-sm"><img src="./img/LOGO_SQUARE_LIGHT_BACKGROUND.png" class="col-sm" style="margin-bottom:0px;" align="center"/>Electric Superbike Twente</div>
+									<div class="col-sm"><img src="./img/LOGO_SQUARE_LIGHT_BACKGROUND.png" class="col-sm" style="margin-bottom:0px;" align="center"/>Nottingham Electric Superbike</div>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="row">
+									<div class="col-sm"><img src="./img/LOGO_SQUARE_LIGHT_BACKGROUND.png" class="col-sm" style="margin-bottom:0px;" align="center"/>Oxford Brookes Racing</div>
+									<div class="col-sm"><img src="./img/LOGO_SQUARE_LIGHT_BACKGROUND.png" class="col-sm" style="margin-bottom:0px;" align="center"/>Placeholder</div>
+									<div class="col-sm"><img src="./img/LOGO_SQUARE_LIGHT_BACKGROUND.png" class="col-sm" style="margin-bottom:0px;" align="center"/>Placeholder</div>
+								</div>
+							</div>
+						</div>
+						<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev" style="margin-left:-100px;">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next" style="margin-right:-100px;">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						</a>
+					</div>
+
+					<div class="jumbotron-fluid member-list">
+						<div class="row">
+							<div class="col-sm"><img src="./img/LOGO_SQUARE_LIGHT_BACKGROUND.png" class="col-sm" style="margin-bottom:0px;" align="center"/>
+								<p class="membertext">Founded in 2015, Bath Zero is known for finishing second in the IOM TT in 2019.</p>
+								<button class="header-button" href="https://www.bathzero.com/">Website</button></div>
+								<div class="col-sm">Warwick Moto</div>
+								<div class="col-sm">Brunel Racing</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="jumbotron jumbotron-fluid" id="rules">
+					<div class="container page-section">
+						<h1 class="h1gen">Rules</h1>
+						<div class="row">
+							<div class="col-sm">three at a time</div>
+							<div class="col-sm">three at a time</div>
+							<div class="col-sm">three at a time</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="jumbotron jumbotron-fluid" id="contact">
+					<div class="container page-section contactform">
+						<h1 class="h1gen">Contact Us</h1>
+						<!-- Google Forms -->
+						<form class="form" action="https://docs.google.com/forms/d/e/1FAIpQLSdHI_e89Bh-HbRyJL_QSeaRM1R9gy88PrfHuTQbiDv0CsttgQ/formResponse">
+
+						<div class="form-group row submit-query">
+								<label class="col-sm-2 form-label">Name</label>
+								<input name="entry.1186298212" type="text" class="col-sm-10"/>
+							</div>
+
+							<div class="form-group row submit-query">
+								<label class="col-sm-2 col-form-label form-label">E-mail</label>
+								<input name="entry.1744096750" type="email" class="col-sm-10" required />
+							</div>
+
+							<div class="form-group row submit-query">
+								<label class="col-sm-2 form-label">Enquiry type</label>
+								<div class="form-check form-check-inline col-sm-3">
+									<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" name="entry.388107590">
+									<label class="form-check-label" for="inlineCheckbox1">Joining</label>
+								</div>
+								<div class="form-check form-check-inline col-sm-3">
+									<input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2" name="entry.388107590">
+									<label class="form-check-label" for="inlineCheckbox2">Events</label>
+								</div>
+
+								<div class="form-check form-check-inline col-sm-3">
+									<input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" name="entry.388107590">
+									<label class="form-check-label" for="inlineCheckbox2">Other</label>
+								</div>
+							</div>
+
+							<div class="form-group row submit-query">
+								<label class="col-sm-2 form-label">Enquiry</label>
+								<textarea class="form-control col-sm-10" rows="3" name="entry.1567572184" type="text" /></textarea>
+							</div>
+
+							<button type="submit" class="btn btn-primary" value="Send">Submit</button>
+						</form>
+					</div>
+				</div>
+
+				<div class="jumbotron-fluid medialinks">
+					<div class="container page-section">
+					<h1 class="h1gen">Follow us on Social Media</h1>
+					<a href="https://www.facebook.com/Electric-Road-Racing-Association-100373328222333/" data-toggle="tooltip" data-placement="top" title="Facebook Page" class="socmed"><i class="fab fa-facebook"></i></a>
+					<a href="https://twitter.com/ERRAssociation" data-toggle="tooltip" data-placement="top" title="@ERRAssociation" class="socmed"><i class="fab fa-twitter"></i></a>
+					<a href="https://www.instagram.com/errassociation/" data-toggle="tooltip" data-placement="top" title="@ERRAssociation" class="socmed"><i class="fab fa-instagram"></i></a>
+					<a href="https://www.linkedin.com/company/errassocation" data-toggle="tooltip" data-placement="top" title="ERRAssociation" class="socmed"><i class="fab fa-linkedin"></i></a>
+				</div>
+</div>
+				<!-- Site footer -->
+				<footer class="footer site-footer">
+					<div class="container">
+
+						<span class="float-left">
+							&copy MMXX - ERRA
+						</span>
+						<span class="float-right">
+							Last Updated 16/02/2020
+						</span>
+					</div>
+				</footer>
+
+				<!-- Bootstrap JS -->
+				<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+				<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+				<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+				<script src="js/main.js"></script>
+			</body>
+			</html>
