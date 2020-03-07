@@ -107,13 +107,13 @@ p {
 }
 
 .sitetitle {
-  font-family: Metrophobic, sans-serif;
+  font-family: 'Metrophobic', sans-serif;
   font-size: 60px;
   font-weight: 600;
 }
 
 .sitesubtitle {
-  font-family: Metrophobic, sans-serif;
+  font-family: 'Metrophobic', sans-serif;
   font-size: 50px;
   margin-top: -10px;
   margin-bottom: 20px;
@@ -157,7 +157,7 @@ p {
 
 /* Site Content formatting */
 .h1gen {
-  font-family: Metrophobic, sans-serif;
+  font-family: 'Metrophobic', sans-serif;
   font-size: 48px;
   font-weight:600;
   text-align: left;
@@ -165,7 +165,7 @@ p {
 }
 
 .h2gen {
-  font-family: Metrophobic, sans-serif;
+  font-family: 'Metrophobic', sans-serif;
   font-size: 36px;
   font-weight:600;
   text-align: left;
