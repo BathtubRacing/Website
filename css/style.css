@@ -10,34 +10,64 @@ html {
 }
 
 /* Navbar Formatting */
-  nav ul {
-    margin: 5px 0 0;
-  }
-
-  nav ul li {
-    display: inline-block;
-    margin: 0 0px 0;
-  }
-
+/* Add a black background color to the top navigation */
 .topnav {
-  background:rgba(246,247,253,1);
-  font-family: 'Metrophobic', sans-serif;
-  font-size: 18px;
-  font-weight: 600;
+  background-color: #333;
+  overflow: hidden;
 }
 
+/* Style the links inside the navigation bar */
 .topnav a {
-  color: rgba(73,8,6,1);
-  padding: 10px 15px;
-  text align: center;
   float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
+  font-size: 17px;
 }
 
-.topnav a:hover, a:active {
-  background: rgba(73,8,6,1);
-  color: rgba(246,247,253,1);
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
 }
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
 
 /* Header text Formatting */
 
@@ -78,8 +108,8 @@ html {
   font-family: Metrophobic;
   font-weight: 500;
   font-size: 20px;
-  color: rgb(73,8,6);
-  padding: 5px 15px;
+color: rgb(73,8,6);
+padding: 5px 15px;
 }
 
 .header-button:hover {
@@ -101,9 +131,8 @@ html {
   }
 
   .sitetitle {
-  font-size: 36px;
-  }
-
+    font-size: 36px;
+    }
 }
 
 /* Site Content formatting */
@@ -125,119 +154,4 @@ html {
 
 #about, #calendar, #members, #rules {
   margin-bottom:0px;
-}
-
-.about-desc {
-  text-align: justify;
-}
-
-#calendar, #rules {
-  background:rgba(255,255,255,1);
-}
-
-#members {
-  background: rgba(51,51,51,1);
-  color:rgba(255,255,255,1);
-  text-align: center;
-}
-
-/* Members intro */
-.membertext {
-  font-family: Roboto;
-  font-size: 18px;
-  text-align: justify;
-  color:rgba(255,255,255,1);
-  margin-bottom: 15px;
-}
-
-@media (max-width:767px) {
-  .member-carousel {
-    display: none;
-  }
-}
-
-@media (min-width:767px) {
-  .member-list {
-    display: none;
-  }
-}
-
-#contact {
-  text-align: center;
-}
-
-/* Form styling */
-.contactform {
-  font-family: Roboto;
-  font-size: 16px;
-  color: rgba(0,0,0,1)
-}
-
-@media (max-width:767px) {
-  .contactform {
-    padding: 50px;
-  }
-}
-
-.form-label {
-  font-family: Roboto, sans-serif;
-  font-weight: 600;
-  font-size:18px;
-}
-
-.submit-query {
-  text-align: left;
-}
-
-.btn-primary {
-  margin-bottom: 50px;
-
-}
-
-.medialinks {
-  padding-bottom: 65px;
-  text-align: center;
-}
-
-/* Socmed icons formattng */
-.socmed {
-  font-size: 75px;
-  margin-right: 2vh;
-  color: rgba(73,8,6,1);
-  color: rgb(73,8,6);
-}
-
-@media (max-width:767px) {
-  .medialinks {
-    padding: 50px;
-    padding-bottom: 65px;
-  }
-
-
-  .socmed {
-    font-size: 55px;
-    margin-right: 1vh;
-  }
-}
-
-.socmed:hover {
-  color: rgba(172,18,30,1);
-  color: rgb(172,18,30);
-  text-decoration: none;
-  transition: ease-in-out, 0.25s;
-  -webkit-transition: ease-in-out, 0.25s;
-  -moz-transition: ease-in-out, 0.25s;
-}
-
-
-/* Site footer formatting */
-.site-footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  background-color:rgba(51,51,51,1);
-  color: rgba(255,255,255,1);
-  padding: 10px;
-  margin-top:65px;
-  font-size: 8px;
 }
