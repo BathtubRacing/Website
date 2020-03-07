@@ -16,7 +16,7 @@ body {
 /* Navbar Formatting */
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: #333;
+  background-color: rgb(73,8,6);
   overflow: hidden;
 }
 
@@ -24,7 +24,7 @@ body {
 .topnav a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: rgb(255,255,255);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -33,8 +33,8 @@ body {
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #ddd;
-  color: black;
+  background-color: rgb(255,255,255);
+  color: rgb(73,8,6);
 }
 
 /* Add an active class to highlight the current page */
@@ -147,10 +147,12 @@ body {
   .headerbg {
     background-position: 50% 30%;
     margin-top:65px;
+    height: 100vh;
   }
 
   .sitemaininfo {
     font-size: 16px;
+    height: 90vh;
   }
 
   .sitetitle {
