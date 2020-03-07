@@ -223,6 +223,10 @@ p {
   padding-bottom: 65px;
 }
 
+.member-list .col-sm {
+  margin-top: 20px;
+}
+
 
 @media (max-width:767px) {
   .member-marquee {
