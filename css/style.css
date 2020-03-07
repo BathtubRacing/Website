@@ -256,6 +256,12 @@ p {
     width:100%;
     min-height:500px; padding: 20px;
     text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .calendar-container iframe {
+    position: absolute; top:0; left: 0; width: 100%; height: 100%;
   }
 
 
