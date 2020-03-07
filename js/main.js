@@ -14,3 +14,6 @@ function myFunction() {
     x.className = "topnav";
   }
 }
+
+/** Scrollspy **/
+$('body').scrollspy({ target: '#myTopnav' })

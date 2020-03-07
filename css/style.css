@@ -9,6 +9,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  width: 100vw;
+}
+
 /* Navbar Formatting */
 /* Add a black background color to the top navigation */
 .topnav {
@@ -71,9 +75,14 @@ html {
 
 /* Header text Formatting */
 
+#home {
+  height: 100vh;
+}
+
 .headerbg {
   background-image:url('../img/bike.jpg');
   background-position: 0% 30%;
+  background-attachment: fixed;
   background-size: cover;
   margin-bottom:0px;
   margin-top:40px;
@@ -86,6 +95,7 @@ html {
   width: 80%;
   color: black;
   font-size: 20px;
+  height: 75vh;
 }
 
 .sitetitle {
@@ -101,6 +111,19 @@ html {
   margin-bottom: 20px;
 }
 
+.socmed {
+  color: rgb(73,8,6);
+  font-size: 4vw;
+  margin-right: 3vw;
+  transition: ease-in-out, 0.5s;
+  -webkit-transition: ease-in-out, 0.5s;
+  -moz-transition: ease-in-out, 0.5s;
+}
+
+.socmed:hover {
+  color: rgb(73,8,6);
+}
+
 /* Header button formatting */
 .header-button {
   background-color: rgba(255,255,255,1);
@@ -108,8 +131,8 @@ html {
   font-family: Metrophobic;
   font-weight: 500;
   font-size: 20px;
-color: rgb(73,8,6);
-padding: 5px 15px;
+  color: rgb(73,8,6);
+  padding: 5px 15px;
 }
 
 .header-button:hover {
@@ -132,7 +155,11 @@ padding: 5px 15px;
 
   .sitetitle {
     font-size: 36px;
-    }
+  }
+
+  .sitesubtitle {
+    font-size: 24px;
+  }
 }
 
 /* Site Content formatting */
@@ -154,4 +181,29 @@ padding: 5px 15px;
 
 #about, #calendar, #members, #rules {
   margin-bottom:0px;
+}
+
+#calendar, #rules {
+  background: rgba(255,255,255,1);
+}
+
+#members {
+  background: rgba(51,51,51,1);
+  color: rgba(255,255,255,1);
+}
+
+.medialinks {
+  padding-bottom: 65px;
+}
+
+/* Footer formatting */
+.site-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: rgba(51,51,51,1);
+  width: 100%;
+  padding: 10px;
+  color: rgba(255,255,255,1);
+  font-size: 10pt;
 }
