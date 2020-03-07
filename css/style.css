@@ -11,6 +11,7 @@ html {
 
 body {
   width: 100vw;
+  position: relative;
 }
 
 p {
@@ -19,7 +20,7 @@ p {
 }
 
 /* Navbar Formatting */
-/* Add a black background color to the top navigation */
+/* Add a background color to the top navigation */
 .topnav {
   background-color: rgb(73,8,6);
   overflow: hidden;
@@ -84,6 +85,8 @@ p {
   height: 100vh;
 }
 
+/* Header background formatting */
+
 .headerbg {
   background-image:url('../img/bike.jpg');
   background-position: 0% 30%;
@@ -116,6 +119,7 @@ p {
   margin-bottom: 20px;
 }
 
+/* Formatting the social media & e-mail icons */
 .socmed {
   color: rgb(73,8,6);
   font-size: 3.75vw;
@@ -129,27 +133,7 @@ p {
   color: rgb(73,8,6);
 }
 
-/* Header button formatting */
-.header-button {
-  background-color: rgba(255,255,255,1);
-  border: 2px solid rgb(73,8,6);
-  font-family: Metrophobic;
-  font-weight: 500;
-  font-size: 20px;
-  color: rgb(73,8,6);
-  padding: 5px 15px;
-  text-decoration: none;
-}
-
-.header-button:hover {
-  color: rgb(255,255,255);
-  background: rgb(73,8,6);
-  text-decoration: none;
-  transition: ease-in-out, 0.5s;
-  -webkit-transition: ease-in-out, 0.5s;
-  -moz-transition: ease-in-out, 0.5s;
-}
-
+/* Media queries for smaller screen */
 @media (max-width: 767px) {
   .headerbg {
     background-position: 50% 30%;
@@ -188,13 +172,42 @@ p {
   margin-bottom: 10px;
 }
 
-#about, #calendar, #members, #rules {
+#about, #rules, #members, #calendar {
   margin-bottom:0px;
 }
 
 #calendar, #rules {
   background: rgba(255,255,255,1);
 }
+
+/* Rules formatting */
+.rule-numbering {
+  float: left;
+  display: block;
+  width: 50px;
+  text-align: center;
+  padding: 10px;
+  font-family: 'Metrophobic', sans-serif;
+  font-size: 36px;
+  font-weight:600;
+  background: rgb(73,8,6);
+  color: rgba(255,255,255,1);
+  margin-right: 20px;
+}
+
+/* Media queries */
+
+  @media (max-width:767px) {
+    .rule-numbering {
+        font-size: 24px;
+    }
+
+    .h2gen {
+      font-size: 24px;
+    }
+  }
+
+/* Members area formatting */
 
 #members {
   background: rgba(51,51,51,1);
@@ -219,24 +232,16 @@ p {
   color: rgba(255,255,255,1);
 }
 
-.medialinks {
-  padding-bottom: 65px;
-}
 
 .member-list .col-sm {
   margin-top: 20px;
 }
 
+/* Media queries */
 
 @media (max-width:767px) {
   .member-marquee {
     display: none;
-  }
-
-  .header-button {
-    margin-bottom: 20px;
-    margin-top: 0px;
-    text-decoration: none;
   }
 }
 
@@ -246,36 +251,13 @@ p {
   }
 }
 
-/* Rules formatting */
-.rule-numbering {
-  float: left;
-  display: block;
-  width: 50px;
-  text-align: center;
-  padding: 10px;
-  font-family: 'Metrophobic', sans-serif;
-  font-size: 36px;
-  font-weight:600;
-  background: rgb(73,8,6);
-  color: rgba(255,255,255,1);
-  margin-right: 20px;
-}
-
-  @media (max-width:767px) {
-    .rule-numbering {
-        font-size: 24px;
-    }
-
-    .h2gen {
-      font-size: 24px;
-    }
+  /* Calendar formatting */
+  .calendar-container {
+    width:100%;
+    min-height:500px; padding: 20px;
+    text-align: center;
   }
 
-/* Contact form formatting */
-
-#contact {
-  padding: 20px;
-}
 
 /* Footer formatting */
 .site-footer {
