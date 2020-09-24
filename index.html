@@ -1,220 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<!-- Meta data -->
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="author" content="ERRA">
-	<meta name="description" content="ERRA Home">
-	<meta name="keywords" content="Electric, Road Racing, Association, Motorbike, Motorcycle">
-	<!-- Title -->
-	<title>ERRA</title>
-	<!-- Style sheets -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> <!-- Bootstrap -->
-	<link rel="stylesheet" href="css/style.css" type="text/css"> <!-- Homepage CSS -->
-	<link href='http://fonts.googleapis.com/css?family=Metrophobic|Roboto:400italic,700,400,600' rel='stylesheet' type='text/css'> <!-- Google Fonts -->
-	<link rel="stylesheet" href="https://daneden.github.io/animate.css/" type="text/css" />
-	<!-- Scripts -->
-	<script src="https://kit.fontawesome.com/2e9f86df2c.js" crossorigin="anonymous"></script> <!-- FontAwesome for social media icons -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERRA - Electric Road Racing Association</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/2e9f86df2c.js" crossorigin="anonymous"></script> <!-- FontAwesome for social media icons -->
 </head>
-<body>
-	<nav class="navbar fixed-top topnav">
-		<div id="myTopnav">
-			<a href="#home" class="nav-link active">Home</a>
-			<a href="#about" class="nav-link">About</a>
-			<a href="#rules" class="nav-link">Rules</a>
-			<a href="#members" class="nav-link">Members</a>
-			<a href="#events" class="nav-link">Events</a>
-			<a href="javascript:void(0);" class="icon" onclick="myFunction()" style="float: right;">
-				<i class="fa fa-bars"></i>
-			</a>
-		</div>
-	</nav>
-	<!-- Site Title and Tag-line -->
-	<div class="jumbotron jumbotron-fluid headerbg" id="home">
-		<div class="container page-section sitemaininfo">
-			<img src="img/ERRA.png" />
-			<h1 class="sitetitle">Electric Road Racing Association</h2>
-				<p style="text-align: center;">
-					ERRA is an electric motorcycle racing association formed by a number of University and privateer teams to take electric motorcycle racing to the next level.
-				</p>
-				<h1 class="sitesubtitle">Get in touch with us!</h1>
-				<a href="https://www.facebook.com/Electric-Road-Racing-Association-100373328222333/" data-toggle="tooltip" data-placement="top" title="Facebook Page" class="socmed"><i class="fab fa-facebook"></i></a>
-				<a href="https://twitter.com/ERRAssociation" data-toggle="tooltip" data-placement="top" title="@ERRAssociation" class="socmed"><i class="fab fa-twitter"></i></a>
-				<a href="https://www.instagram.com/errassociation/" data-toggle="tooltip" data-placement="top" title="@ERRAssociation" class="socmed"><i class="fab fa-instagram"></i></a>
-				<a href="https://www.linkedin.com/company/errassocation" data-toggle="tooltip" data-placement="top" title="Electric Road Racing Association" class="socmed"><i class="fab fa-linkedin"></i></a>
-				<a href="mailto:oh292@bath.ac.uk" data-toggle="tooltip" data-placement="top" title="E-mail us at example@erra.com" class="socmed"><i class="fas fa-envelope"></i></a>
-			</div>
-		</div>
+<body class="preload"> <!-- Preload class to prevent transitions from firing at pageload-->
 
-		<div class="jumbotron jumbotron-fluid" id="about">
-			<div class="container page-section about-desc">
-				<h1 class="h1gen">About</h1>
-				<p>
-					The mission of ERRA is to champion electric motorcycle racing and raise the profile and number of events and competitions featuring electric powered machines. Creating standard classes for electric bikes to race on their own or with combustion bikes is one of the goals of the association. The logistics, safety, regulatory and planning aspects are all essential to get right, not just to allow our sport to continue but enable it to grow as more and more racers want an electric ride.
-				</p>
-				<p>
-					We were founded in 2020 by a number of electric motorcycle teams from the UK and the Netherlands, all with the same goal: to go racing! The association represents the interests of all teams.
-				</p>
-				<p>
-					If you already have or are considering building or purchasing an electric racing motorcycle we encourage you to join us. There are plenty of opportunities to collaborate, the technicalities of designing and building a competition capable electric bike. We will be be working hard to secure as many race meetings throughout upcoming seasons as possible, for as many bikes as possible.
-				</p>
-				<p>
-					In the near future we hope to work with governing bodies to codify a standard set of technical rules and construction guidelines for electric motorcycles to ensure safety and consistency. This will be published in the rules section of this website.
-				</p>
-			</div>
-		</div>
+    <!--DEFINITIONS FOR STRIPE PATTERN-->
+    <svg width="0" height="0" display= "block" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <pattern id="stripesPatternBlue" width="40" height="10" patternTransform="rotate(31)" patternUnits="userSpaceOnUse">
+                <line x1="0" y1="0" x2="0" y2="10" style="stroke:#00addc; stroke-width:3" />
+            </pattern>
 
-		<div class="jumbotron jumbotron-fluid" id="rules">
-			<div class="container page-section">
-				<h1 class="h1gen">Rules</h1>
-				<div class="rule-numbering">1</div> <h2 class="h2gen">ERRA Standard Technical Regulations</h2>
-				<p>
-					Currently under development.
-				</p>
+            <pattern id="stripesPatternWhite" width="40" height="10" patternTransform="rotate(31)" patternUnits="userSpaceOnUse">
+                <line x1="0" y1="0" x2="0" y2="10" style="stroke:white; stroke-width:3" />
+            </pattern>
+        </defs>
+    </svg>
 
-				<div class="rule-numbering">2</div> <h2 class="h2gen">Sample Supplementary Electric Regulations</h2>
-				<p>
-					Currently under development.
-				</p>
-
-				<div class="rule-numbering">3</div> <h2 class="h2gen">Electrical Safety and Scrutineering Guidance and Procedures</h2>
-				<p>
-					Currently under development.
-				</p>
-
-				<div class="rule-numbering">4</div> <h2 class="h2gen">Engineering Case Study</h2>
-				<p>
-					Currently under development.
-				</p>
-			</div>
-		</div>
-
-		<div class="jumbotron jumbotron-fluid" id="members">
-			<div class="container page-section">
-				<h1 class="h1gen">Members</h1>
-				<div class="member-marquee">
-					<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-						<div class="carousel-inner teams">
-							<div class="carousel-item active">
-								<div class="row">
-									<div class="col-sm">
-										<a href="https://www.bathzero.com/"><img src="./img/BZ.png" class="col-sm" style="margin-bottom:0px;" align="center" /></a>
-									</div>
-									<div class="col-sm">
-										<a href="https://www.warwickengineers.co.uk/warwick-moto"><img src="./img/WM.png" class="col-sm" style="margin-bottom:0px;" align="center" /></a>
-									</div>
-									<div class="col-sm">
-										<a href="https://brunelracing.com"><img src="./img/BR.jpg" class="col-sm" style="margin-bottom:0px;" align="center" /></a>
-									</div>
-								</div>
-							</div>
-							<div class="carousel-item">
-								<div class="row">
-									<div class="col-sm">
-										<a href="https://novaracing.nl/"><img src="./img/Nova.png" class="col-sm" style="margin-bottom:0px;" align="center" /></a>
-									</div>
-									<div class="col-sm">
-										<a href="https://electricsuperbiketwente.nl/"><img src="./img/Twente.png" class="col-sm" style="margin-bottom:0px;" align="center" /></a>
-									</div>
-									<div class="col-sm">
-										<a href="https://www.nottingham.ac.uk/research/groups/power-electronics-machines-and-control-group/e-racing-team/"><img src="./img/Nottingham.jpg" class="col-sm" style="margin-bottom:0px;" align="center" /></a>
-									</div>
-								</div>
-							</div>
-							<div class="carousel-item">
-								<div class="row">
-									<div class="col-sm">
-										<a href="https://obr.brookes.ac.uk/"><img src="./img/OBR.png" class="col-sm" style="margin-bottom:0px;" align="center" /></a>
-									</div>
-									<div class="col-sm">
-										<a href="http://duffy-motorsport.com/"><img src="./img/DM.jpg" class="col-sm" style="margin-bottom:0px;" align="center"></a>
-									</div>
-									<div class="col-sm">
-										<img src="./img/Question.png" class="col-sm" style="margin-bottom:0px;" align="center"/>Could this be you?
-									</div>
-								</div>
-							</div>
-						</div>
-						<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev" style="margin-left:-100px;">
-							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-							<span class="sr-only">Previous</span>
-						</a>
-						<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next" style="margin-right:-100px;">
-							<span class="carousel-control-next-icon" aria-hidden="true"></span>
-							<span class="sr-only">Next</span>
-						</a>
-					</div>
-				</div>
-
-				<div class="member-list">
-					<div class="row">
-						<div class="col-sm"><img src="./img/BZ.png" class="col-sm" style="margin-bottom:0px;" align="center" href="https://www.bathzero.com/" />
-						</div>
-						<div class="col-sm">
-							<img src="./img/WM.png" class="col-sm" style="margin-bottom:0px;" align="center" href="https://www.warwickengineers.co.uk/warwick-moto" />
-						</div>
-						<div class="col-sm">
-							<img src="./img/BR.png" class="col-sm" style="margin-bottom:0px;" align="center" href="https://brunelracing.com" />
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-sm">
-							<img src="./img/Nova.png" class="col-sm" style="margin-bottom:0px;" align="center" href="https://novaracing.nl/" />
-						</div>
-						<div class="col-sm">
-							<img src="./img/Twente.png" class="col-sm" style="margin-bottom:0px;" align="center" href="https://electricsuperbiketwente.nl/" />
-						</div>
-						<div class="col-sm">
-							<img src="./img/Nottingham.jpg" class="col-sm" style="margin-bottom:0px;" align="center" href="https://www.nottingham.ac.uk/research/groups/power-electronics-machines-and-control-group/e-racing-team/" />
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-sm">
-							<img src="./img/OBR.png" class="col-sm" style="margin-bottom:0px;" align="center" href="https://obr.brookes.ac.uk/"/>
-						</div>
-						<div class="col-sm">
-							<img src="./img/DM.jpg" class="col-sm" style="margin-bottom:0px;" align="center" href="http://duffy-motorsport.com/">
-						</div>
-						<div class="col-sm">
-							<img src="./img/Question.png" class="col-sm" style="margin-bottom:0px;" align="center"/>Could this be you?
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="jumbotron jumbotron-fluid" id="events">
-			<div class="container page-section calendar-container">
-				<h1 class="h1gen">Events</h1>
-				<iframe src="https://calendar.google.com/calendar/embed?src=o90rp25sc26iv38u2l0jq5k5u4%40group.calendar.google.com&ctz=Europe%2FLondon" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-			</div>
-		</div>
+    <!--NAVIGATION BAR-->
+    <nav class="navbar">
+        <a class="logo" href="#"><img src="img/ERRA_Logo.svg" alt="logo"></a>
+        <ul class="nav__links">
+                <li><a href="#">Members</a></li>
+                <li><a href="#">Regulations</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="mailto:enquiries@erra.bike"><button>Contact</button></a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
 
 
+    <!--MAIN CONTENT-->
+    <div class="content">
 
-		<!-- Site footer -->
-		<footer class="footer site-footer">
-			<div class="container">
-				<div class="row">
-					<div class="col" style="text-align: left;">
-						© MMXX - ERRA
-					</div>
-					<div class="col" style="text-align: right;">
-						Last Updated 07/03/2020
-					</div>
-				</div>
-			</div>
-		</footer>
+        <section class="introduction">
+            <div id="flex-container">
+                <div class="stripes">
+                    <svg>
+                        <rect width="100%"></rect>
+                    </svg>
+                </div>
 
-		<!-- JS files-->
-		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-		<script src="js/main.js"></script>
-		<script src="js/scripts.js"></script>
-		<script src="js/validator.js"></script>
-		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.2/css/bootstrapValidator.min.css"/>
-		<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.2/js/bootstrapValidator.min.js"></script>
-	</body>
-	</html>
+                <div class="introduction-textbox">
+                    <img src="img/bike-bath.jpg" alt="Bike">
+                    <h1>"We want to bring electric bikes into the limelight"</h1>
+                  </br>
+                    <p>Get electric bike racing everywhere -- that is our mission. Safe, clean, fast electric machines tearing through corners and tearing up straights, lap after lap.</p>
+                </div>
+
+                <div class="stripes">
+                    <svg>
+                        <rect width="100%"></rect>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <section class="who-are-we">
+            <div id="flex-container">
+                <div class="stripes">
+                    <svg>
+                        <rect width="100%"></rect>
+                    </svg>
+                </div>
+                <div class="who-are-we-textbox">
+                    <h1>What is ERRA?</h1>
+                    <p>The Electric Road Racing Association (ERRA) was founded in early 2020 by a a group of electric bike teams wanting to secure the future of their sport and their racing machines. They set out on a journey together to get back on track, better than ever.</p>
+                    <p> By working with race organisers, EV experts, constructors and other interested parties, ERRA began to develop a set electric motorcycle technical regulations and associated guidance for organisers. Best practice was drawn from other electric motorsport competitions and experience over the previous decade of electric motorcycle racing.</p>
+                    <p><b>These regulations continue to be developed and will be publicly released soon.</b></p>
+                    <p>ERRA is a members' organisation. Id you already have or are considering building or competing with an electric motorcycle for competitive use, please get in touch!</p>
+                    <a href="mailto:enquiries@erra.bike"><button>Contact</button></a>
+                </div>
+                <div class="stripes">
+                    <svg>
+                        <rect width="100%"></rect>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <section class="members">
+            <h1>Current members</h1>
+            <div id="flexcontainer">
+                <ul>
+                    <li><a href="https://www.bathzero.com/"><img src="img/members/BathZero-logo.png" alt="BathZero-logo"></a></li>
+                    <li><a href="https://brunelracing.com/"><img src="img/members/BrunelRacing-logo.jpg" alt="BrunelRacing-logo"></a></li>
+                    <li><a href="http://duffy-motorsport.com/"><img src="img/members/DuffyMotorsport-logo.jpg" alt="DuffyMotorsport-logo"></a></li>
+                    <li><a href="https://electricsuperbiketwente.nl/"><img src="img/members/ElectricSuperbikeTwente-logo.png" alt="ElectricSuperbikeTwente-logo"></a></li>
+                    <li><a href="https://jhynemancenter.com/ukkonen/"><img src="img/members/JHC-logo.png" alt="JHynemanCenter-logo"></a></li>
+                    <li><a href="https://novaracing.nl/"><img src="img/members/NovaRacing-logo.png" alt="NovaRacing-logo"></a></li>
+                    <li><a href="https://obr.brookes.ac.uk/"><img src="img/members/OxfordBrookesRacing-logo.png" alt="OxfordBrookesRacing-logo"></a></li>
+                    <li><a href="https://www.nottingham.ac.uk/research/groups/power-electronics-machines-and-control-group/e-racing-team/"><img src="img/members/UniversityNottingham-logo.jpg" alt="UniversityNottingham-logo"></a></li>
+                    <li><a href="https://www.warwickengineers.co.uk/warwick-moto"><img src="img/members/WarwickMoto-logo.png" alt="WarwickMoto-logo"></a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="documents">
+            <h1>Regulations and Supporting Documents</h1>
+            <p>Currently under development. Check back soon.</p>
+            <div id="flexcontainer">
+                <ul>
+                    <li><div class="documents-box"></div></li>
+                    <li><div class="documents-box"></div></li>
+                    <li><div class="documents-box"></div></li>
+                    <li><div class="documents-box"></div></li>
+                </ul>
+            </div>
+
+        </section>
+
+
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2020 - ERRA - Electric Road Racing Association</p>
+        <p><a href="privacy/">Privacy Policy</a></p>
+        <nav>
+            <ul class="footer__links">
+                <li><a href="https://www.facebook.com/ERRAssociation/"><i class="fab fa-facebook-square fa-2x"></i></a></li>
+                <li><a href="https://twitter.com/ERRAssociation"><i class="fab fa-twitter fa-2x"></i></a></li>
+                <li><a href="https://www.instagram.com/errassociation/"><i class="fab fa-instagram fa-2x"></i></a></li>
+                <li><a href="https://www.linkedin.com/company/errassociation/"><i class="fab fa-linkedin-in fa-2x"></i></a></li>
+                <li><a href="mailto:enquiries@erra.bike"><i class="fas fa-envelope fa-2x"></i></a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>
