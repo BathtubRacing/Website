@@ -322,6 +322,7 @@ button:hover {
     /** MOBILE MENU **/
     body {
         overflow-x: hidden;
+        position: relative;
     }
     .nav__links {
         z-index: -1;
