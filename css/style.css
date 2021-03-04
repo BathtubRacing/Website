@@ -233,6 +233,10 @@ button:hover {
     margin: 1em;
 }
 
+.documents-box img{
+    margin: 0em;
+    width: 100%;
+}
 
 
 .footer {
