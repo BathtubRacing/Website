@@ -50,3 +50,11 @@
     line-height: 150%;
     margin-bottom: 1.5ch;
 }
+
+.article-text h1 {
+    font-size: 1.75rem;
+    line-height: 120%;
+    text-decoration: underline var(--erra-accent);
+    margin-bottom: 0.5ch;
+    text-align: center;
+}
