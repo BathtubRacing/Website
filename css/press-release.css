@@ -2,7 +2,16 @@
     width: 100%;
 }
 
-.article-body .date, .article-text {
+.article-date, .article-text {
     width: 65ch;
     margin: auto;
+}
+
+.article-text heading {
+    font-size: 2rem;
+    line-height: 125%;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1ch;
+    display: block;
 }
