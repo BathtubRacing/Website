@@ -2,3 +2,7 @@
     width: 100%;
 }
 
+.article-body .date, .article-text {
+    width: 65ch;
+    margin: auto;
+}
