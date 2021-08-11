@@ -6,6 +6,7 @@
 .article-date, .article-text {
     width: 45rem;
     margin: auto;
+    text-align: left;
 }
 
 .article .article-img {
@@ -21,7 +22,7 @@
 .article-date {
     margin-bottom: 20px;
     font-size: 0.8rem;
-    text-align: left;
+    text-align: center;
     font-weight: 400;
 }
 
@@ -32,7 +33,16 @@
     text-transform: uppercase;
     margin-bottom: 1ch;
     display: block;
+    text-align: center;
     text-decoration: underline var(--erra-accent);
+}
+
+.article-text summary {
+    font-size: 1.3rem;
+    line-height: 120%;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 1ch;
 }
 
 .article-text p {
