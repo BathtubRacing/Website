@@ -22,15 +22,21 @@
     margin-bottom: 20px;
     font-size: 0.8rem;
     text-align: left;
-    font-weight: 700;
+    font-weight: 400;
 }
 
 .article-text heading {
-    font-size: 2rem;
-    line-height: 125%;
+    font-size: 2.2rem;
+    line-height: 120%;
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 1ch;
     display: block;
-    text-decoration: underline;
+    text-decoration: underline var(--erra-accent);
+}
+
+.article-text p {
+    font-size: 1rem;
+    line-height: 150%;
+    margin-bottom: 1.5ch;
 }
