@@ -1,9 +1,10 @@
+
 .article {
     width: 100%;
 }
 
 .article-date, .article-text {
-    width: 65ch;
+    width: 45rem;
     margin: auto;
 }
 
@@ -14,7 +15,14 @@
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    margin: 20px 0;
+    margin: 0px 0px 20px;
+}
+
+.article-date {
+    margin-bottom: 20px;
+    font-size: 0.8rem;
+    text-align: left;
+    font-weight: 700;
 }
 
 .article-text heading {
@@ -24,4 +32,5 @@
     text-transform: uppercase;
     margin-bottom: 1ch;
     display: block;
+    text-decoration: underline;
 }
