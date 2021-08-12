@@ -41,7 +41,7 @@
     font-size: 1.15rem;
     line-height: 120%;
     font-weight: 400;
-    text-align: center;
+    text-align: left;
     margin-bottom: 1ch;
 }
 
@@ -49,6 +49,15 @@
     font-size: 1rem;
     line-height: 150%;
     margin-bottom: 1.5ch;
+}
+
+.article-text a {
+    color: var(--erra-accent);
+    font-weight: 600;
+}
+
+.article-text a:hover {
+    border-bottom: 2px solid var(--erra-accent)
 }
 
 .article-text h1 {
@@ -124,4 +133,17 @@
 
 .news-links .contact-details .fa-arrow-left {
     font-size: calc(1.2 * 1.7rem)
+}
+
+/************ 
+MEDIA QUERIES 
+************/
+
+/* TABLET */
+@media screen and (min-width: 1020px) {
+
+}
+
+/* PHONE */
+@media screen and (max-width: 490px) {
 }
