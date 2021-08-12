@@ -42,11 +42,18 @@
 }
 
 .article-text summary {
-    font-size: 1.15rem;
+    font-size: 1.4rem;
     line-height: 120%;
     font-weight: 400;
     text-align: left;
     margin-bottom: 1ch;
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--erra-accent);
+}
+
+.article-text summary ul {
+    width: 80%;
+    margin: auto;
 }
 
 .article-text p {
