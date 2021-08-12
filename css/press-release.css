@@ -58,3 +58,20 @@
     margin-bottom: 0.5ch;
     text-align: center;
 }
+
+.news-links {
+    width: 100%;
+    background: var(--erra-accent);
+    padding: 20vh 0;
+}
+
+.news-links svg {
+    height: 5em;
+    width: 100%;
+    z-index: 1;
+}
+
+.news-links rect {
+    height: 100%;
+    fill: url(#stripesPatternWhite);
+}
