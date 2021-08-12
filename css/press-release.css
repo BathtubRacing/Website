@@ -10,7 +10,7 @@
 }
 
 .article .article-img {
-    width: 100%;
+    width: 100vw;
     height: 50vh;
     background-size: cover;
     background-position: center;
@@ -24,6 +24,10 @@
     font-size: 0.8rem;
     text-align: center;
     font-weight: 400;
+}
+
+.article-date b {
+    font-size: 0.8rem;
 }
 
 .article-text heading {
@@ -140,10 +144,50 @@ MEDIA QUERIES
 ************/
 
 /* TABLET */
-@media screen and (min-width: 1020px) {
+@media (max-width: 1024px) {
+    .article-date, .article-text {
+        width: 30rem;
+        margin: auto;
+        text-align: left;
+    }
+
+    .article-date {
+        margin-bottom: 1ch
+    }
+
+    .article-date, .article-date b {
+        font-size: 0.6rem;
+    }
+
+    .article-text heading {
+        font-size: 1.8rem;
+    }
+
+    .article-text summary {
+        font-size: 1rem;
+    }
+
+    .article-text p {
+        font-size: 0.8175rem;
+    }
+
+    .news-links .contact-details .head, .news-links .contact-details a.back-button {
+        font-size: 1.5rem;
+        line-height: 500%;
+    }
+
+    .news-links .contact-details a.contact-name {
+        font-size: 1.3rem;
+    }
+
 
 }
 
 /* PHONE */
-@media screen and (max-width: 490px) {
+@media (max-width: 490px) {
+    .article-date, .article-text {
+        width: 30rem;
+        margin: auto;
+        text-align: left;
+    }
 }
