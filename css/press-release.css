@@ -131,8 +131,11 @@
     font-size: 1.7rem;
     line-height: 400%;
     text-transform: uppercase;
-    border-bottom: 2px solid var(--white-hex);
     font-weight: 700;
+}
+
+.news-links .contact-details a.back-button:hover {
+    border-bottom: 2px solid var(--white-hex);
 }
 
 .news-links .contact-details .fa-arrow-left {
@@ -167,6 +170,10 @@ MEDIA QUERIES
         font-size: 1rem;
     }
 
+    .article-text h1 {
+        font-size: 1.5rem;
+    }
+
     .article-text p {
         font-size: 0.8175rem;
     }
@@ -186,8 +193,31 @@ MEDIA QUERIES
 /* PHONE */
 @media (max-width: 490px) {
     .article-date, .article-text {
-        width: 30rem;
+        width: 100%;
+        padding: 20px;
         margin: auto;
         text-align: left;
+    }
+
+    .article .article-img {
+        height: 25vh;
+    }
+
+    .news-links .contact-details {
+        width: 80vw;
+        left: 10vw;
+    }
+
+    .article-text h1 {
+        font-size: 1.3rem;
+    }
+
+    .news-links .contact-details .head, .news-links .contact-details a.back-button {
+        font-size: 1.2rem;
+        line-height: 500%;
+    }
+
+    .news-links .contact-details a.contact-name {
+        font-size: 1.1rem;
     }
 }
