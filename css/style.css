@@ -196,6 +196,10 @@ button:hover {
 }
 
 
+.who-are-we-textbox a:hover {
+    border-bottom: 2px solid var(--white-hex)
+}
+
 
 .members {
     text-align: center;
