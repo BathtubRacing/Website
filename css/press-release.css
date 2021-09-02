@@ -1,0 +1,229 @@
+
+.article {
+    width: 100%;
+}
+
+.article-date, .article-text {
+    width: 45rem;
+    margin: auto;
+    text-align: left;
+}
+
+.article .article-img {
+    width: 100vw;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin: 0px 0px 20px;
+}
+
+.article-date {
+    margin-bottom: 20px;
+    font-size: 0.8rem;
+    text-align: center;
+    font-weight: 400;
+}
+
+.article-date b {
+    font-size: 0.8rem;
+}
+
+.article-text heading {
+    font-size: 2.2rem;
+    line-height: 120%;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1ch;
+    display: block;
+    text-align: center;
+    text-decoration: underline var(--erra-accent);
+}
+
+.article-text summary {
+    font-size: 1.4rem;
+    line-height: 120%;
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 1ch;
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--erra-accent);
+}
+
+.article-text summary ul {
+    width: 80%;
+    margin: auto;
+}
+
+.article-text p {
+    font-size: 1rem;
+    line-height: 150%;
+    margin-bottom: 1.5ch;
+}
+
+.article-text a {
+    color: var(--erra-accent);
+    font-weight: 600;
+}
+
+.article-text a:hover {
+    border-bottom: 2px solid var(--erra-accent)
+}
+
+.article-text h1 {
+    font-size: 1.75rem;
+    line-height: 120%;
+    text-decoration: underline var(--erra-accent);
+    margin-bottom: 0.5ch;
+    margin-top: 1.5ch;
+    text-align: center;
+}
+
+.news-links {
+    width: 100%;
+    background: var(--erra-accent);
+    padding: 20vh 0;
+    text-align: center;
+    margin: auto;
+    margin-top: 45px;
+    position: relative;
+}
+
+.news-links .stripes {
+    z-index: 1;
+}
+
+.news-links svg {
+    height: 5em;
+    width: 100vw;
+    z-index: 1;
+}
+
+.news-links rect {
+    height: 100vw;
+    fill: url(#stripesPatternWhite);
+}
+
+.news-links .contact-details {
+    z-index: 2;
+    width: 50vw;
+    background-color: var(--erra-accent);
+    font-weight: 400;
+    color: var(--white-hex);
+    position: absolute;
+    left: 25vw;
+    top: 0;
+}
+
+.news-links .contact-details .head {
+    color: var(--black-hex);
+    display: block;
+    width: 100%;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 400%;
+}
+
+.news-links .contact-details a.contact-name {
+    font-size: 1.5rem;
+    line-height: 1.25;
+    font-weight: 700;
+}
+
+
+.news-links .contact-details a.back-button {
+    font-size: 1.7rem;
+    line-height: 400%;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.news-links .contact-details a.back-button:hover {
+    border-bottom: 2px solid var(--white-hex);
+}
+
+.news-links .contact-details .fa-arrow-left {
+    font-size: calc(1.2 * 1.7rem)
+}
+
+/************ 
+MEDIA QUERIES 
+************/
+
+/* TABLET */
+@media (max-width: 1024px) {
+    .article-date, .article-text {
+        width: 30rem;
+        margin: auto;
+        text-align: left;
+    }
+
+    .article-date {
+        margin-bottom: 1ch
+    }
+
+    .article-date, .article-date b {
+        font-size: 0.6rem;
+    }
+
+    .article-text heading {
+        font-size: 1.8rem;
+    }
+
+    .article-text summary {
+        font-size: 1rem;
+    }
+
+    .article-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .article-text p {
+        font-size: 0.8175rem;
+    }
+
+    .news-links .contact-details .head, .news-links .contact-details a.back-button {
+        font-size: 1.5rem;
+        line-height: 500%;
+    }
+
+    .news-links .contact-details a.contact-name {
+        font-size: 1.3rem;
+    }
+
+
+}
+
+/* PHONE */
+@media (max-width: 490px) {
+    .article-date, .article-text {
+        width: 100%;
+        padding: 20px;
+        margin: auto;
+        text-align: left;
+    }
+
+    .article .article-img {
+        height: 25vh;
+    }
+
+    .news-links .contact-details {
+        width: 80vw;
+        left: 10vw;
+    }
+
+    .article-text h1 {
+        font-size: 1.3rem;
+    }
+
+    .news-links .contact-details .head, .news-links .contact-details a.back-button {
+        font-size: 1.2rem;
+        line-height: 500%;
+    }
+
+    .news-links .contact-details a.contact-name {
+        font-size: 1.1rem;
+    }
+}

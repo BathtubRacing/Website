@@ -1,10 +1,24 @@
 
 
 * {
-    font-family: 'Verdana', sans-serif;
+    /* VARIABLE SETUP FOR EASE OF CHANGES TO WEBSITE APPEARANCE FOR FUTURE LAYOUTS */
+    /* FONTS */
+    --body-font: 'Verdana', sans-serif;
+
+    /* COLOURS */
+    --black-rgb: 0,0,0;
+    --black-hex: #000;
+    --white-hex: #fff;
+    --white-rgb: 255, 255, 255;
+    --erra-accent: #00addc;
+    --erra-accent-rgb: 0, 173, 220;
+    --clear-rgba: 255, 255, 255, 0;
+
+    /* GENERAL BODY FORMATTING */
+    font-family: var(--body-font);
     margin: 0;
     box-sizing: border-box;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 h1 {
@@ -29,15 +43,15 @@ ul {
     z-index: 99;
     justify-content: space-between;
     align-items: center;
-    background: black;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    background: var(--black-hex);
+    box-shadow: 0 2px 5px rgba(var(--black-rgb), 0.3);
     text-transform: uppercase;
     padding: 0 5%;
     height: 5em;
 }
 
 .navbar li, a {
-    color: white;
+    color: var(--white-hex);
     text-decoration: none;
 }
 
@@ -51,7 +65,7 @@ ul {
 }
 
 .nav__links a:hover {
-    border-bottom: 3px solid #00addc;
+    border-bottom: 3px solid var(--erra-accent);
 }
 
 .logo {
@@ -68,7 +82,7 @@ ul {
 .burger div {
     width: 25px;
     height: 3px;
-    background-color: white;
+    background-color: var(--white-hex);
     margin: 5px;
     transition: all 0.2s ease;
 }
@@ -78,7 +92,7 @@ ul {
 
 button {
     font-size: 1rem;
-    color: black;
+    color: var(--black-hex);
     background-color: #fed571;
     padding: .6em 1.25em;
     border: none;
@@ -89,7 +103,7 @@ button {
 }
 
 button:hover {
-    background-color: white;
+    background-color: var(--white-hex);
 }
 
 
@@ -115,14 +129,12 @@ button:hover {
 }
 
 .introduction-textbox {
-    background: black;
+    background: var(--black-hex);
     box-sizing: border-box;
     flex: 0 1 65em;
     min-height: 20em;
-
     overflow: hidden;
-
-    color: white;
+    color: var(--white-hex);
     font-size: 1rem;
 }
 
@@ -156,7 +168,7 @@ button:hover {
 .who-are-we {
     width: 100%;
     padding: 3em 0;
-    background: #00addc;
+    background: var(--erra-accent);
     position: relative;
 }
 
@@ -174,7 +186,7 @@ button:hover {
 .who-are-we-textbox {
     margin: 0 2em;
     text-align: center;
-    color: white;
+    color: var(--white-hex);
 
     flex: 0 1 50em;
 }
@@ -184,15 +196,19 @@ button:hover {
 }
 
 
+.who-are-we-textbox a:hover {
+    border-bottom: 2px solid var(--white-hex)
+}
+
 
 .members {
     text-align: center;
-    background: black;
+    background: var(--black-hex);
     padding: 3em 0;
 }
 
 .members h1 {
-    color: white;
+    color: var(--white-hex);
 }
 
 .members li {
@@ -210,7 +226,7 @@ button:hover {
 
 .documents {
     text-align: center;
-    background: white;
+    background: var(--white-hex);
     margin: 3em 0;
 }
 
@@ -242,8 +258,8 @@ button:hover {
 
 
 .footer {
-    background: black;
-    color: white;
+    background: var(--black-hex);
+    color: var(--white-hex);
     padding: 1em 5%;
     text-align: center;
 }
@@ -267,7 +283,7 @@ button:hover {
 }
 
 .footer__links a:hover {
-    border-bottom: 3px solid #00addc;
+    border-bottom: 3px solid var(--erra-accent);
 }
 
 
@@ -335,8 +351,8 @@ button:hover {
         position: absolute;
         right: 0px;
         top: 5em;
-        background-color: black;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        background-color: var(--black-hex);
+        box-shadow: 0 2px 5px rgba(var(--black-rgb), 0.3);
 
         display: flex;
         flex-direction: column;
@@ -375,6 +391,7 @@ button:hover {
     -moz-transition: none !important;
     -ms-transition: none !important;
     -o-transition: none !important;
+    transition: none !important;
 }
 
 @keyframes navLinkFade {
