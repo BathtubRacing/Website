@@ -11,6 +11,7 @@
     --white-hex: #fff;
     --white-rgb: 255, 255, 255;
     --erra-accent: #ff69b4;
+    --bathtub-accent: #03e6fc;
     --erra-accent-rgb: 255, 105, 180;
     --clear-rgba: 255, 255, 255, 0;
 
@@ -43,7 +44,7 @@ ul {
     z-index: 99;
     justify-content: space-between;
     align-items: center;
-    background: var(--black-hex);
+    background: var(--bathtub-accent);
     box-shadow: 0 2px 5px rgba(var(--black-rgb), 0.3);
     text-transform: uppercase;
     padding: 0 5%;
@@ -203,7 +204,7 @@ button:hover {
 
 .members {
     text-align: center;
-    background: var(--black-hex);
+    background: var(--bathtub-accent);
     padding: 3em 0;
 }
 
@@ -223,10 +224,22 @@ button:hover {
 }
 
 
+.documents li {
+    display: inline-block;
+    text-decoration: none;
+    padding: 1em;
+}
+
+.documents img {
+    width: 30vw;
+    min-width: 5em;
+}
+
 
 .documents {
     text-align: center;
     background: var(--white-hex);
+    color: var(--black-hex);
     margin: 3em 0;
 }
 
@@ -252,6 +265,7 @@ button:hover {
 .documents-box img{
     max-width:100%;
     max-height:100%;
+    
     height: auto;
     object-fit: contain;
 }
